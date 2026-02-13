@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Alice ❤️</title>
+<title>For Alice 💜</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 
@@ -12,25 +12,40 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Playfair Display', serif;
-    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+    background: linear-gradient(135deg, #6a0dad, #b19cd9);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
+}
+
+/* Floating hearts */
+.heart {
+    position: absolute;
+    color: rgba(255,255,255,0.4);
+    font-size: 20px;
+    animation: float 10s infinite linear;
+}
+
+@keyframes float {
+    from { transform: translateY(100vh); }
+    to { transform: translateY(-10vh); }
 }
 
 .card {
     background: white;
     padding: 40px;
     max-width: 600px;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
     text-align: center;
 }
 
 h1 {
     font-size: 22px;
     margin-bottom: 30px;
+    color: #4b0082;
 }
 
 .poem {
@@ -41,20 +56,23 @@ h1 {
 .poem span {
     font-weight: 600;
     font-size: 20px;
-}
-
-.footer {
-    margin-top: 30px;
-    font-size: 14px;
-    opacity: 0.7;
+    color: #6a0dad;
 }
 </style>
 </head>
 
 <body>
 
+<!-- Hearts -->
+<div class="heart" style="left:10%; animation-duration:12s;">💜</div>
+<div class="heart" style="left:25%; animation-duration:9s;">💜</div>
+<div class="heart" style="left:40%; animation-duration:11s;">💜</div>
+<div class="heart" style="left:60%; animation-duration:13s;">💜</div>
+<div class="heart" style="left:75%; animation-duration:8s;">💜</div>
+<div class="heart" style="left:90%; animation-duration:10s;">💜</div>
+
 <div class="card">
-    <h1>Happy Valentine’s Day, my little baklava, my love, my purpose in life.</h1>
+    <h1>Happy Valentine’s Day, my little baklava, my love, my purpose in life 💜</h1>
 
     <div class="poem">
         <p><span>A</span>lice in Wonderland — even that fantasy could never compare to our love story.</p>
@@ -62,10 +80,6 @@ h1 {
         <p><span>I</span>n the boathouse, being with you is my sweetest memory.</p>
         <p><span>C</span>lose to your heart, even the distance between us can’t disturb our harmony.</p>
         <p><span>E</span>ven this distance will fade, and we will be together for eternity.</p>
-    </div>
-
-    <div class="footer">
-        Look at the first letters of each line 🤍
     </div>
 </div>
 
